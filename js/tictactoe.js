@@ -40,25 +40,26 @@ $(document).ready(function(){
 
   function checkIfPlayerWon(symbol) {
 
-    if($('#board').find('.sq1').hasClass(symbol) && $('#board').find('.sq2').hasClass(symbol) && $('#board').find('.sq3').hasClass(symbol)) {
+    if($('.sq1').hasClass(symbol) && $('.sq2').hasClass(symbol) && $('.sq3').hasClass(symbol)) {
       return true;
-    } else if($('#board').find('.sq4').hasClass(symbol) && $('#board').find('.sq5').hasClass(symbol) && $('#board').find('.sq6').hasClass(symbol)) {
+    } else if ($('.sq4').hasClass(symbol) && $('.sq5').hasClass(symbol) && $('.sq6').hasClass(symbol)) {
       return true;
-    } else if($('#board').find('.sq7').hasClass(symbol) && $('#board').find('.sq8').hasClass(symbol) && $('#board').find('.sq9').hasClass(symbol)) {
+    } else if($('.sq7').hasClass(symbol) && $('.sq8').hasClass(symbol) && $('.sq9').hasClass(symbol)) {
       return true;
-    } else if($('#board').find('.sq1').hasClass(symbol) && $('#board').find('.sq4').hasClass(symbol) && $('#board').find('.sq7').hasClass(symbol)) {
+    } else if($('.sq1').hasClass(symbol) && $('.sq4').hasClass(symbol) && $('.sq7').hasClass(symbol)) {
       return true;
-    } else if($('#board').find('.sq2').hasClass(symbol) && $('#board').find('.sq5').hasClass(symbol) && $('#board').find('.sq8').hasClass(symbol)) {
+    } else if ($('.sq2').hasClass(symbol) && $('.sq5').hasClass(symbol) && $('.sq8').hasClass(symbol)) {
       return true;
-    } else if($('#board').find('.sq3').hasClass(symbol) && $('#board').find('.sq6').hasClass(symbol) && $('#board').find('.sq9').hasClass(symbol)) {
+    } else if($('.sq3').hasClass(symbol) && $('.sq6').hasClass(symbol) && $('.sq9').hasClass(symbol)) {
       return true;
-    } else if($('#board').find('.sq1').hasClass(symbol) && $('#board').find('.sq5').hasClass(symbol) && $('#board').find('.sq9').hasClass(symbol)) {
+    } else if($('.sq1').hasClass(symbol) && $('.sq5').hasClass(symbol) && $('.sq9').hasClass(symbol)) {
       return true;
-    } else if($('#board').find('.sq3').hasClass(symbol) && $('#board').find('.sq5').hasClass(symbol) && $('#board').find('.sq7').hasClass(symbol)) {
+    } else if($('.sq3').hasClass(symbol) && $('.sq5').hasClass(symbol) && $('.sq7').hasClass(symbol)) {
       return true;
+    } else {
+      return false;
     }
 
-    return false;
   }
 
 });
