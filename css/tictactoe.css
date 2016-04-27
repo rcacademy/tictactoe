@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#board {
+  width: 450px;
+  margin: 50px auto auto;
+}
+
+#board .row {
+  clear: both;
+  overflow: hidden;
+}
+
+#board .square:hover {
+  cursor: pointer;
+}
+#board .square {
+  float: left;
+  width: 149px;
+  height: 100px;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.right {
+  border-right: 1px solid black;
+}
+
+.bottom {
+  border-bottom: 1px solid black;
+}
+
+.oh {
+  background-color: blue;
+}
+
+.ex {
+  background-color: red;
+}
