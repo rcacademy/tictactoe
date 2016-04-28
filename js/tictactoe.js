@@ -23,7 +23,7 @@ $(document).ready(function(){
   })
 
   function getState(square) {
-    if(square.hasClass('ex') || square.hasClass('oh')) {
+    if(square.hasClass('fa-times') || square.hasClass('fa-circle-o')) {
       return true;;
     } else {
       return false;
